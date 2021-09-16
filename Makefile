@@ -167,7 +167,7 @@ openlane:
 .PHONY: mount
 mount:
 	cd $(OPENLANE_DIR) && \
-		docker run -it --rm -v $(OPENLANE_DIR):/openLANE_flow -v $(PDK_ROOT):$(PDK_ROOT) -e PDK_ROOT=$(PDK_ROOT) $(DOCKER_OPTIONS) $(IMAGE_NAME)
+		docker run -it --rm -v $(OPENLANE_DIR):/openLANE_flow:z -v $(PDK_ROOT):$(PDK_ROOT):z -e PDK_ROOT=$(PDK_ROOT) $(DOCKER_OPTIONS) $(IMAGE_NAME)
 
 MISC_REGRESSION_ARGS=
 .PHONY: regression regression_test
