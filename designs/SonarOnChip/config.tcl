@@ -9,12 +9,14 @@ set ::env(CLOCK_PERIOD) "20"
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "wb_clk_i"
 
-set ::env(DESIGN_IS_CORE) 1
+set ::env(DESIGN_IS_CORE) 0
 set ::env(PL_SKIP_INITIAL_PLACEMENT) 1
 
-set ::env(PL_TARGET_DENSITY) 0.66
+set ::env(PL_TARGET_DENSITY) 0.1
 set ::env(FP_ASPECT_RATIO) 1
 set ::env(FP_CORE_UTIL) 50
+
+set ::env(GLB_RT_ALLOW_CONGESTION) 1
 
 
 
